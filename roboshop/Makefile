@@ -4,7 +4,7 @@ help:		## show this help
 
 catalogue:  ## Install catalogue
 		@bash components/catalogue.sh
-mongodb:	## Install mongodb
+Mongodb:	## Install Mongodb
 		@bash components/mongodb.sh
 redis:	    ## Install Redis
 		@bash components/redis.sh

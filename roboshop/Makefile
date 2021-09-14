@@ -10,13 +10,13 @@ Redis:	    ## Install Redis
 		@bash components/redis.sh
 user:    	## Install user
 		@bash components/user.sh
-Cart:    	 ## Install cart
+Cart:    	    ## Install cart
 		@bash components/cart.sh
-Mysql:	      ## Install mysql
+Mysql:	        ## Install mysql
 		@bash components/mysql.sh
-shipping:  	## Install shipping
+shipping:   	## Install shipping
 		@bash components/shipping.sh
-Rabbitmq:    ## Install Rabbitmq
+Rabbitmq:      ## Install Rabbitmq
 		@bash components/rabbitmq
 payment:  	## Install payment
 		@bash components/payment.sh

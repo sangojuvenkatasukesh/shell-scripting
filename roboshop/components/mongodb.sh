@@ -1,4 +1,4 @@
-#!bin/bash
+
 echo "Installing Mongodb"
 echo '[mongodb-org-4.2]
 name=MongoDB Repository

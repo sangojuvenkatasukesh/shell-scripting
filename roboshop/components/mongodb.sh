@@ -7,7 +7,10 @@ if [ $? -eq 0 ];then
     exit 2
 fi    
 }
-echo "Setting up Mongodb repo"
+Print(){
+    echo -n -e"$1 - "
+}
+Print "Setting up Mongodb repo"
 
 echo '[mongodb-org-4.2]
 name=MongoDB Repository
@@ -16,27 +19,29 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mongodb.repo
 Status_Check $?
-echo "Installing Mongodb"
+Print "Installing Mongodb"
 yum install -y mongodb-org  &>>/tmp/log
 Status_Check $?
-echo "Configuring Mongodb"
+Print "Configuring Mongodb"
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 Status_Check $?
 
-echo "Starting Mongodb"
+Print "Starting Mongodb"
 systemctl enable mongod
 systemctl restart mongod
 Status_Check $?
 
-echo "Downloading Mongodb"
+Print "Downloading Mongodb"
 curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
 Status_Check $?
 cd /tmp
-echo "Extracting schema Archive"
+Print "Extracting schema Archive"
 unzip -o mongodb.zip &>>/tmp/log
 Status_Check $?
  cd mongodb-main
- echo "Loading schema"
+ Print "Loading schema"
  mongo < catalogue.js &>>/tmp/log
  mongo < users.js  &>>/tmp/log
 Status_Check $?
+
+exit 0

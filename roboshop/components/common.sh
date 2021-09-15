@@ -7,7 +7,7 @@ if [ $? -eq 0 ];then
 fi    
 }
 
-Prinprint() {
+Print() {
     echo -n -e "$1 - "
 }
 

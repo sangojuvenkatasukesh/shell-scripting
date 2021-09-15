@@ -9,8 +9,8 @@ fi
 
 Prinprint() {
     echo -n -e "$1 - "
-    
 }
+
 if [UID -ne 0 ]; then
     echo -e "\n\e[1;33mYou Should Execute this Script as a root user\e[0m\n"
     exit 1

@@ -39,7 +39,7 @@ Print "Extracting schema Archive"
 unzip -o mongodb.zip &>>/tmp/log
 Status_Check $?
  cd mongodb-main
- Print "Loading schema\t"
+ Print "Loading schema\t\t"
  mongo < catalogue.js &>>/tmp/log
  mongo < users.js  &>>/tmp/log
 Status_Check $?

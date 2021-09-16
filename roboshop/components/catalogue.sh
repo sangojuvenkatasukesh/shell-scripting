@@ -9,6 +9,7 @@ Status_Check $?
 
 Print "Adding Roboshop User"
 useradd roboshop &>>$LOG
+Status_Check $?
 
 
 Print "Downloading Catalogue Content"

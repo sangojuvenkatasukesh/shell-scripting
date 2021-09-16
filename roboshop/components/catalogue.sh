@@ -9,7 +9,7 @@ Status_Check $?
 
 Print "Adding Roboshop User"
 useradd roboshop &>>$LOG
-
+Status_Check $?
 
 Print "Downloading Catalogue Content"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
@@ -18,7 +18,7 @@ Status_Check $?
 Print "Extracting Catalogue"
 cd /home/roboshop
 unzip -o /tmp/catalogue.zip &>>$LOG
-mv catalogue-main catalogue
+ mv catalogue-main catalogue
 Status_Check $?
 
 cd /home/roboshop/catalogue

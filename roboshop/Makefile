@@ -2,7 +2,7 @@ help:		## show this help
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep
 
 
-catalogue:  ## Install Catalogue
+catalogue:  ## Install catalogue
 		@bash components/catalogue.sh
 Mongodb:	## Install Mongodb
 		@bash components/mongodb.sh

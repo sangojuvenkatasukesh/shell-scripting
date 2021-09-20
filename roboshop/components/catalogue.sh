@@ -21,7 +21,7 @@ $unzip -o /tmp/catalogue.zip &>>$LOG
 Status_Check $?
 
 cd /home/roboshop/catalogue
- npm install &>>$LOG
+ npm install --unsafe-perm &>>$LOG
 
 
 # mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service

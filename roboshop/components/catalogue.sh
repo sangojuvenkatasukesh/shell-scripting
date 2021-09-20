@@ -22,13 +22,12 @@ Status_Check $?
 Print "Extracting Catalogue"
 cd /home/roboshop
 unzip -o /tmp/catalogue.zip  &>>$LOG
-mv catalogue-main catalogue
+cat main catalogue
 if [ $? -eq 0 ];then
-  echo "success"
+  echo "exists"
 else 
-  echo "failure"
- 
-Status_Check $?
+  mv catalogue-main catalogue
+ Status_Check $?
 
 cd /home/roboshop/catalogue
  npm install --unsafe-perm &>>$LOG

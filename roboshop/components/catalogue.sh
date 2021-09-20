@@ -21,8 +21,13 @@ Status_Check $?
 
 Print "Extracting Catalogue"
 cd /home/roboshop
-unzip -o /tmp/catalogue.zip &>>$LOG
+unzip -o /tmp/catalogue.zip  &>>$LOG
 mv catalogue-main catalogue
+if [ $? -eq 0 ];then
+  echo "success"
+else 
+  echo "failure"
+ 
 Status_Check $?
 
 cd /home/roboshop/catalogue

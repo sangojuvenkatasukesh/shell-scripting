@@ -5,10 +5,10 @@ source components/common.sh
 
 Print "Install Yum Utils & Download redis repo"
 yum install epel-release http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y  &>>$LOG
- Status_Check $?
+Status_Check $?
  
 Print "Setup Redis Repo"
-yum-config-manager --enable remi &>>$LOG
+yum-config-manager --enable remi  &>>$LOG
 Status_Check $?
 
 Print " Install Redis"

@@ -9,7 +9,7 @@ Status_Check $?
  
 Print " Setup Redis Repo"
 yum-config-manager --enable remi &>>$LOG
-
+Status_Check $?
 
 Print " Install Redis"
 yum install redis -y  &>>$LOG

@@ -1,7 +1,7 @@
 #!bin/bash
 
 source components/common.sh
-Print "Install Yum  Utils & Download Redis Repo\t\t"
+Print "Install Yum  Utils & Download Redis Repo"
 yum install epel-release yum-utils http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y &>>$LOG
  Status_Check $?
  

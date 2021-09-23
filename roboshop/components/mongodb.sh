@@ -1,6 +1,6 @@
 #!bin/bash
 source components/common.sh
-Print "Setting up Mongodb repo"
+Print "Setting up Mongodb repo\t\t"
 
 echo '[mongodb-org-4.2]
 name=MongoDB Repository
@@ -9,14 +9,14 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mongodb.repo
 Status_Check $?
-Print "Installing Mongodb\t"
+Print "Installing Mongodb\t\t"
 yum install -y mongodb-org  &>>$LOG
 Status_Check $?
-Print "Configuring Mongodb\t"
+Print "Configuring Mongodb\t\t"
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 Status_Check $?
 
-Print "Starting Mongodb\t"
+Print "Starting Mongodb\t\t"
 systemctl enable mongod
 systemctl restart mongod
 Status_Check $?

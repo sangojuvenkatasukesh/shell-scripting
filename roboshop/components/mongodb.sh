@@ -21,15 +21,15 @@ systemctl enable mongod
 systemctl restart mongod
 Status_Check $?
 
-Print "Downloading Mongodb\t"
+Print "Downloading Mongodb\t\t"
 curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
 Status_Check $?
 cd /tmp
-Print "Extracting schema Archive"
+Print "Extracting schema Archive\t"
 unzip -o mongodb.zip &>>$LOG
 Status_Check $?
  cd mongodb-main
- Print "Loading schema\t\t"
+ Print "Loading schema\t\t\t"
  mongo < catalogue.js &>>$LOG
  mongo < users.js  &>>$LOG
 Status_Check $?

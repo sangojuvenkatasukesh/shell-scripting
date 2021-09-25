@@ -1,4 +1,4 @@
-#!
+#!bin/bash
 
 LID="lt-047b73cb1b4bfbeec"
 LVER=1

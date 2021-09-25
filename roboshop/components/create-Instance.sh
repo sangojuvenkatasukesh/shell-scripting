@@ -1,5 +1,6 @@
 #!bin/bash
 
-LID="lt-047b73cb1b4bfbeec"
+LID="c"
 LVER=1
+
 aws ec2 run-instances --launch template LaunchTemplateId=$LID,Version=$LVER

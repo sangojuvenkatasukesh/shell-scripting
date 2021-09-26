@@ -10,7 +10,6 @@ if [ -z "${INSTANCE_NAME}" ]; then
 fi
 
 
-aws ec2 describe-instances \
-    --filters "Name=tag:Owner,Values=my-team"
-    
+a
+
 InstanceID=$(aws ec2 run-instances --launch-template LaunchTemplateId=$LID,Version=$LVER --tag-specifications "ResourceType=spot-instances-request,Tags=[{Key=Name,Value=$INSTANCE_NAME}]" "ResourceType=instance,Tags=[{Key=Name,Value=$INSTANCE_NAME}]" | jq .Instances[].PrivateIpAddress | sed -e 's/"//g')

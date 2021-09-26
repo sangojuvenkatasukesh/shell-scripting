@@ -6,6 +6,6 @@
                             "Name": "a.INSTANCE_NAME roboshop.internal",
                             "Type": "A",
                             "TTL": 300,
-                         "ResourceRecords": [{ "Value": ""}]
+                         "ResourceRecords": [{ "Value": "INSTANCE_IP"}]
 }}]
 }

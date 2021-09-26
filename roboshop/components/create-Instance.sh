@@ -8,3 +8,5 @@ if [ -z "${INSTANCE_NAME}" ]; then
     echo "Input is Missing"
     exit 1
 fi
+
+InstanceID=

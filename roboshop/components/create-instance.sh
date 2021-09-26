@@ -25,11 +25,3 @@ InstanceID=$(aws ec2 run-instances --launch-template LaunchTemplateId=$LID,Versi
 
 sed -e "s/INSTANCE_NAME/$INSTANCE_NAME/" -e "s/INSTANCE_IP/$IP/" record.json >/tmp/record.json
 aws route53 change-resource-record-sets --hosted-zone-id Z06421191721I0AOBUGO2 --change-batch file:///tmp/record.json | jq
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing

@@ -9,4 +9,4 @@ if [ -z "${INSTANCE_NAME}" ]; then
     exit 1
 fi
 
-InstanceID=$(aws ec2 run instances)
+InstanceID=$(aws ec2 run-instances)

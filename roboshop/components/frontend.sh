@@ -10,8 +10,8 @@ Print "DownLoad Frontend Archive"
  curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 Status_Check $?
 
-Print "Extract Frnt Archive "
-# cd /usr/share/nginx/html
+Print "Extract Frontend Archive "
+ cd /usr/share/nginx/html
 # rm -rf * 
 # unzip /tmp/frontend.zip
 # mv frontend-main/* .

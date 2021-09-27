@@ -19,7 +19,7 @@ Print "Copy Roboshop Config File\t"
 Status_Check $?
 
 Print "Update Roboshop Config File\t"
- /etc/nginx/default.d/roboshop.conf &>>$LOG
+ sed -e '/catalogue/ s/localhost/catalogue.roboshop.internal/' /etc/nginx/default.d/roboshop.conf &>>$LOG
 Status_Check $?
 
 

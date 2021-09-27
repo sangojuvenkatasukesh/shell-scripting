@@ -18,7 +18,6 @@ Print  "Install Redis\t\t\t\t"
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/redis.conf
  Status_Check $?
 
- Print "Configure Redis Listen Address\t\t"
  if [ -f  /etc/redis.conf ]; then
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/redis.conf
  Status_Check $?

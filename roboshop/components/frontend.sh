@@ -3,6 +3,7 @@
 source components/common.sh
  Print "Installing Nginx"
 yum install nginx -y
+Status_
 
 
 

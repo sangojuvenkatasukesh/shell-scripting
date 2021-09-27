@@ -8,7 +8,8 @@ Status_Check $?
 
 Print "DownLoad Frontend Archive"
  curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
-Deploy in Nginx Default Location.
+Status_Check $?
+
 
 # cd /usr/share/nginx/html
 # rm -rf * 

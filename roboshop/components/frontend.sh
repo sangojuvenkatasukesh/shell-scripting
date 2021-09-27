@@ -6,7 +6,7 @@ source components/common.sh
 yum install nginx -y &>>$LOG
 Status_Check $?
 
-Print "DownLoad Frontend Archive"
+Print "DownLoad Frontend Archive\t"
  curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 Status_Check $?
 

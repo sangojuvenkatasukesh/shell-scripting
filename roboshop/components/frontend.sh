@@ -1,7 +1,7 @@
 #!bin/bash
 
 source components/common.sh
- Print "I"
+ Print "Installing Nginx"
 yum install nginx -y
 
 

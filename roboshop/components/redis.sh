@@ -23,5 +23,5 @@ fi
  Status_Check $?
 
 Print "Start Database\t\t\t\t"
-systemctl enable redis  &>>$LOG && systemctl start redis  &>>$LOG
+systemctl enable redis  &>>$LOG && systemctl restart redis  &>>$LOG
 Status_Check $?

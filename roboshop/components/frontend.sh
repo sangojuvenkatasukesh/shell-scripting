@@ -7,7 +7,7 @@ yum install nginx -y &>>$LOG
 Status_Check $?
 
 Print "DownLoad Frontend Archive"
-# curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
+ curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 Deploy in Nginx Default Location.
 
 # cd /usr/share/nginx/html

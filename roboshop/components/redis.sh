@@ -17,7 +17,11 @@ Print  "Install Redis\t\t\t\t"
  if [ -f  /etc/redis.conf ]; then
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/redis.conf
  Status_Check $?
- 
+
+ Print "Configure Redis Listen Address\t\t"
+ if [ -f  /etc/redis.conf ]; then
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/redis.conf
+ Status_Check $?
 
 Print "Start Database\t\t\t\t"
 systemctl enable redis  &>>$LOG && systemctl start redis  &>>$LOG

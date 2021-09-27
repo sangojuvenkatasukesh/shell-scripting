@@ -2,8 +2,7 @@
 
 source components/common.sh
  
-
-# yum install nginx -y
+yum install nginx -y
 # systemctl enable nginx 
 # systemctl start nginx 
 Let's download the HTDOCS content and deploy under the Nginx path.

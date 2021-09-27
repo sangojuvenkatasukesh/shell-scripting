@@ -13,13 +13,13 @@ Status_Check $?
 Print "Extract Frontend Archive "
 rm -rf /usr/share/nginx/html/* cd /usr/share/nginx/html  && unzip /tmp/frontend.zip &>>$LOG && mv frontend-main/* . 
   &>>$LOG && mv static/* . &>>$LOG
-  Status_Check $?
+Status_Check $?
 
 Print "Update Roboshop Config File"
  mv localhost.conf /etc/nginx/default.d/roboshop.conf &>>$LOG
- Status_Check $?
+Status_Check $?
 
 
 Print "Start Nginx"
  systemctl restart nginx  &>>$LOG  &&  systemctl enable nginx  &>>$LOG
- Status_Check $?
+  Status_Check $?

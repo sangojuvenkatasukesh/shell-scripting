@@ -20,5 +20,5 @@ Print "Update Roboshop Config File"
  Status_Check $?
 
 
-
+Print "Start Nginx"
 # systemctl restart nginx 

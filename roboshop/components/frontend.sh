@@ -21,4 +21,4 @@ Print "Update Roboshop Config File"
 
 
 Print "Start Nginx"
- systemctl restart nginx  &>>$LOG  &&  systemctl restart nginx
+ systemctl restart nginx  &>>$LOG  &&  systemctl enable nginx

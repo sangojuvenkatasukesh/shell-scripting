@@ -15,7 +15,7 @@ Print "Extract Frontend Archive "
   &>>$LOG && mv static/* . &>>$LOG
   Status_Check $?
 
-Print ""
+Print "Update Roboshop Confi"
  mv localhost.conf /etc/nginx/default.d/roboshop.conf
 Finally restart the service once to effect the changes.
 

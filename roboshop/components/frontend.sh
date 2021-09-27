@@ -13,8 +13,10 @@ Status_Check $?
 Print "Extract Frontend Archive "
   rm -rf /usr/share/nginx/html/* cd /usr/share/nginx/html  && unzip /tmp/frontend.zip &>>$LOG && mv frontend-main/* . 
   &>>$LOG && mv static/* . &>>$LOG
-# rm -rf frontend-master static README.md
-# mv localhost.conf /etc/nginx/default.d/roboshop.conf
+  Status_Check $?
+
+
+ mv localhost.conf /etc/nginx/default.d/roboshop.conf
 Finally restart the service once to effect the changes.
 
 # systemctl restart nginx 

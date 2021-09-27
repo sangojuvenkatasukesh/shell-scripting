@@ -20,6 +20,6 @@ Print "Update Roboshop Config File"
 Status_Check $?
 
 
-Print "Start Nginx"
+Print "Startinh Nginx"
 systemctl restart nginx  &>>$LOG  &&  systemctl enable nginx  &>>$LOG
 Status_Check $?

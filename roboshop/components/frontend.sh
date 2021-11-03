@@ -15,7 +15,7 @@ rm -rf /usr/share/nginx/* && cd /usr/share/nginx && unzip -o /tmp/frontend.zip  
 Status_Check $?
 
 Print "Copy Roboshop Config File\t"
- mv localhost.conf /etc/nginx/default.d/roboshop.conf &>>$LOG
+ 
 Status_Check $?
 
 Print "Update Roboshop Config File\t"

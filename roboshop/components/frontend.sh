@@ -7,7 +7,7 @@ yum install nginx -y  &>>$LOG
 Status_Check $?
 
 Print "DownLoad Frontend Archive\t"
- 
+curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 
 Print "Extract Frontend Archive\t"
 rm -rf /usr/share/nginx/* && cd /usr/share/nginx && unzip -o /tmp/frontend.zip  &>>$LOG  && mv frontend-main/* .  

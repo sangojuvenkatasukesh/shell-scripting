@@ -20,7 +20,7 @@ mv localhost.conf /etc/nginx/default.d/roboshop.conf    &>>$LOG
 Status_Check $?
 
 Print "Update Roboshop Config File\t"
-sed -i -e '/catalogue/ s/localhost/Cate/' /etc/nginx/default.d/roboshop.conf &>>$LOG
+sed -i -e '/catalogue/ s/localhost/Catalogue.roboshi/' /etc/nginx/default.d/roboshop.conf &>>$LOG
 Status_Check $?
 
 

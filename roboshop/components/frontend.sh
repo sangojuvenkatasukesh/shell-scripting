@@ -3,7 +3,7 @@
 source components/common.sh
  
  Print "Installing Nginx\t\t"
-
+yum install nginx -y
 Status_Check $?
 
 Print "DownLoad Frontend Archive\t"

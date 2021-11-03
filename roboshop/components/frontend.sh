@@ -2,7 +2,7 @@
 
 source components/common.sh
  
- Print "Installing Nginx\t\t"
+Print "Installing Nginx\t\t"
 yum install nginx -y  &>>$LOG
 Status_Check $?
 

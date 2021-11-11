@@ -32,10 +32,10 @@ cd /home/roboshop/catalogue
 chown roboshop:roboshop -R /home/roboshop
 
 Print "Update Systemd Service\t\t\t"
-sed -i -e 's/MONGO_DNSNAME/172.31.26.33/'  /home/roboshop/catalogue/systemd.service
+sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/'  /home/roboshop/catalogue/systemd.service
 Status_Check $?
 
 Print "Setup Systemd Service\t\t\t"
-mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service && systemctl daemon-reload && systemctl restart catalogue &>>$LOG
+mv /home/roboshop/catalogue/systemd.service  /etc/systemd/system/catalogue.service && systemctl daemon-reload && systemctl restart catalogue &>>$LOG
 systemctl enable catalogue  &>>$LOG
 Status_Check $?

@@ -35,7 +35,7 @@ exit
 
 Print "Unistall Password Validate Plugin"
 echo "Unistall plugin Validate-password;" >/tmp/pass.mysql 
-mysql -u root -p""  </tmp/reset.mysql &>>$LOG
+mysql -u root -p"RoboShop@1 "  </tmp/reset.mysql &>>$LOG
 
 
 Run the following SQL commands to remove the password policy.

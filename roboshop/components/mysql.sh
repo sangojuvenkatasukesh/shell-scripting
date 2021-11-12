@@ -46,4 +46,4 @@ Load the schema for Services.
 # cd /tmp
 # unzip mysql.zip
 # cd mysql-main
-# mysql -u root -pRoboShop@1 <shipping.sql
+# mysql -u root -p  <shipping.sql

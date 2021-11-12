@@ -21,8 +21,8 @@ Status_Check $?
 DEFAULT_PASSWORD=$(grep  'A temporary password' /var/log/mysqld.log | awk '{print $NF}'
 )
 
-echo 'ALTER USER 'root'@'localhost' IDENTIFIED BY 'RoboShop@1';'   >/tmp/reset.mysql
-mysql -u root -p"{DEFAULT_PASSWORD}"     </tmp/reset.sql
+echo 'ALTER USER 'root'@'localhost' IDENTIFIED BY 'RoboShop@1';'  >/tmp/reset.mysql
+mysql -u root -p"{DEFAULT_PASSWORD}" </tmp/reset.sql
 
 exit 
 

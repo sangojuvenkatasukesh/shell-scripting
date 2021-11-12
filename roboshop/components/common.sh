@@ -45,8 +45,8 @@ Print "Update Systemd Service\t\t\t"
 sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/'  /home/roboshop/${COMPONENT}/systemd.service
 Status_Check $?
 Print "Setup Systemd Service\t\t\t"
-mv /home/roboshop/ ${COMPONENT}/systemd.service  /etc/systemd/system/${COMPONENT}.service && systemctl daemon-reload && systemctl restart  ${COMPONENT}  &>>$LOG
-systemctl enable  ${COMPONENT}   &>>$LOG
+mv /home/roboshop/${COMPONENT}/systemd.service  /etc/systemd/system/${COMPONENT}.service && systemctl daemon-reload && systemctl restart ${COMPONENT}  &>>$LOG
+systemctl enable ${COMPONENT}   &>>$LOG
 Status_Check $?
 }
 NODEJS() {

@@ -24,14 +24,7 @@ NODEJS() {
 yum install nodejs make gcc-c++ -y  &>>$LOG
 Status_Check $?
 
-Print "Adding Roboshop User\t\t\t"
-id roboshop &>>$LOG
-if [ $? -eq 0 ];then
-echo "User already exists, So skipping" &>>$LOG
-else
-useradd roboshop  &>>$LOG
- fi
-Status_Check $?
+ADD
 
 Print "Downloading Catalogue Content\t\t"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"

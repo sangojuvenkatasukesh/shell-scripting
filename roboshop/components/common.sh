@@ -19,7 +19,7 @@ if [ $UID -ne 0 ]; then
 LOG=/tmp/roboshop.log
 rm -f $LOG
 
-
+APP_ADD_USER
 NODEJS() {
     Print "Installing NODEJS\t\t\t"
 yum install nodejs make gcc-c++ -y  &>>$LOG

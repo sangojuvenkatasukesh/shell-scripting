@@ -33,7 +33,7 @@ Status_Check $?
 exit  
 
 
-Print "Unistall Password"
+Print "Unistall Password Validate Plugin"
 
 
 Run the following SQL commands to remove the password policy.

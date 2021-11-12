@@ -32,7 +32,7 @@ Next, We need to change the default root password in order to start using the da
 
 You can check the new password working or not using the following command.
 
-# 
+
 
 Run the following SQL commands to remove the password policy.
 > uninstall plugin validate_password;

@@ -29,6 +29,7 @@ useradd roboshop  &>>$LOG
  fi
 Status_Check $?
 }
+
 DOWNLOAD() {
  Print "Downloading ${COMPONENT} Content\t\t"
 curl -s -L -o /tmp/${COMPONENT} .zip "https://github.com/roboshop-devops-project/${COMPONENT} /archive/main.zip"

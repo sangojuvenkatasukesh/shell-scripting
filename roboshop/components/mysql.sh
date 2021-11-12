@@ -16,6 +16,7 @@ Status_Check $?
 
 print "Start MySQL Service"
  systemctl enable mysqld   &>>$LOG && systemctl start mysqld
+ Status_Check $?
 
 Now a default root password will be generated and given in the log file.
 # grep temp /var/log/mysqld.log

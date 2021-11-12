@@ -8,7 +8,7 @@ name=MySQL 5.7 Community Server
 baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/
 enabled=1
 gpgcheck=0' > /etc/yum.repos.d/mysql.repo
-Status_Check 
+Status_Check $?
 
 Install MySQL
 # yum remove mariadb-libs -y 

@@ -24,7 +24,7 @@ NODEJS() {
 yum install nodejs make gcc-c++ -y  &>>$LOG
 Status_Check $?
 
-ADD
+ADD_APP_USER
 
 Print "Downloading Catalogue Content\t\t"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"

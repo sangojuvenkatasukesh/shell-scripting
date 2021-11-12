@@ -55,7 +55,7 @@ cd /home/roboshop/ ${COMPONENT}
 chown roboshop:roboshop -R /home/roboshop
 
 Print "Update Systemd Service\t\t\t"
-sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/'  /home/roboshop/catalogue/systemd.service
+sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/'  /home/roboshop/ ${COMPONENT} /systemd.service
 Status_Check $?
 
 Print "Setup Systemd Service\t\t\t"

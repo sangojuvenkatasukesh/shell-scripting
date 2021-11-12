@@ -22,7 +22,7 @@ DEFAULT_PASSWORD=$( grep 'A temporary password' /var/log/mysqld.log | awk '{prin
 )
 
 Print "Reset Default Password"
-echo 'show databases' |  mysql -u root -pRoboShop@1  c
+echo 'show databases' |  mysql -u root -pRoboShop@1   &>>$LOG
 if [ $? -eq 0 ]; then
 echo "Password is already set"
 else 

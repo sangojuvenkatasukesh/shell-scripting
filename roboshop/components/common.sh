@@ -40,7 +40,7 @@ Status_Check $?
 
 }
 
-Systemd-setup() {
+SystemdD_setup() {
 Print "Update Systemd Service\t\t\t"
 sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/'  /home/roboshop/ ${COMPONENT} /systemd.service
 Status_Check $?

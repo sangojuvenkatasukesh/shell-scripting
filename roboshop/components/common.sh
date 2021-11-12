@@ -33,10 +33,7 @@ DOWNLOAD() {
  Print "Downloading ${COMPONENT} Content\t\t"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
 Status_Check $?
-Print "Extracting Print "Extracting Catalogue\t\t\t"
-cd /home/roboshop
-rm -rf catalogue && unzip -o /tmp/catalogue.zip  &>>$LOG && mv catalogue-main catalogue
-Status_Check $?\t\t\t"
+Print "Extracting Catalogue\t\t\t"
 cd /home/roboshop
 rm -rf catalogue && unzip -o /tmp/catalogue.zip  &>>$LOG && mv catalogue-main catalogue
 Status_Check $?

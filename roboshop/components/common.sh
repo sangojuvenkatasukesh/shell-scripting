@@ -29,7 +29,7 @@ useradd roboshop  &>>$LOG
  fi
 Status_Check $?
 }
-
+DOWNLOAD()
 NODEJS() {
     Print "Installing NODEJS\t\t\t"
 yum install nodejs make gcc-c++ -y  &>>$LOG

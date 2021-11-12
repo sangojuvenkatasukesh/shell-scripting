@@ -31,7 +31,7 @@ Status_Check $?
 }
 DOWNLOAD() {
  Print "Downloading ${COMPONENT} Content\t\t"
-curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
+curl -s -L -o /tmp/${COMPONENT} .zip "https://github.com/roboshop-devops-project/${COMPONENT} /archive/main.zip"
 Status_Check $?
 Print "Extracting ${COMPONENT} \t\t\t"
 cd /home/roboshop

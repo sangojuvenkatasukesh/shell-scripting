@@ -33,7 +33,7 @@ Status_Check $?
 exit  
 
 
-
+Print ""
 
 
 Run the following SQL commands to remove the password policy.

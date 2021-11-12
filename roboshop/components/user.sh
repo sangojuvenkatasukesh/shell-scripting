@@ -2,4 +2,4 @@
 
 source components/common.sh
 
-COMPONENT=
+COMPONENT=useradd

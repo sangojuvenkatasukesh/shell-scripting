@@ -14,7 +14,7 @@ yum remove mariadb-libs -y  &>>$LOG  &&  yum install mysql-community-server -y  
 Status_Check $?
 
 Print "Start MySQL Service"
-systemctl enable mysqld   &>>$LOG && systemctl start mysqld
+systemctl enable mysqld   &>>$LOG && systemctl start mysqld  &>>$LOG
 Status_Check $?
 exit 
 

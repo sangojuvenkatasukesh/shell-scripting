@@ -34,7 +34,7 @@ exit
 
 
 Print "Unistall Password Validate Plugin"
-echo "Unistall "
+echo "Unistall plugin "
 
 
 Run the following SQL commands to remove the password policy.

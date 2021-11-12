@@ -1,7 +1,7 @@
 #!bin/bash
 source components/common.sh
 
-Print "Setup MY"
+Print "Setup MySql Repo"
 Setup MySQL Repo
 # echo '[mysql57-community]
 name=MySQL 5.7 Community Server

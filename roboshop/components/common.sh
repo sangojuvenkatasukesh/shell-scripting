@@ -39,6 +39,8 @@ rm -rf ${COMPONENT}  && unzip -o /tmp/${COMPONENT} .zip  &>>$LOG && mv ${COMPONE
 Status_Check $?
 
 }
+
+Syste
 NODEJS() {
     Print "Installing NODEJS\t\t\t"
 yum install nodejs make gcc-c++ -y  &>>$LOG

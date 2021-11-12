@@ -27,7 +27,7 @@ if [ $? -eq 0 ]; then
 echo "Password is already set"  &>>$LOG
 else 
 echo  "mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'abc'; "  >/tmp/reset.mysql
-mysql --connect-expired-password -u root -p"{DEFAULT_PASSWORD}"  <mysql -u root &>>$LOG
+mysql --connect-expired-password -u root -p"{DEFAULT_PASSWORD}"  </tmp/reset.mysql &>>$LOG
 fi
 Status_Check $?
 exit  

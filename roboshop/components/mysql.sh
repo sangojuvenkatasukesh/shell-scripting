@@ -40,7 +40,7 @@ Status_Check $?
 
 
 
-Print "Download"
+Print "Download the Schema"
 curl -s -L -o /tmp/mysql.zip "https://github.com/roboshop-devops-project/mysql/archive/main.zip"
 Load the schema for Services.
 

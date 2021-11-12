@@ -33,8 +33,13 @@ Status_Check $?
 
 
 Print "Unistall Password Validate Plugin"
+echo 'show plugins;' | mysql -u root -pRoboShop@1  2>/dev/null | grep -i validate_password  &>>$LOG
+if [ $? -eq 0 ];then 
 echo "Unistall plugin Validate-password;" >/tmp/pass.mysql 
 mysql -u root -p"RoboShop@1 "  </tmp/reset.mysql &>>$LOG
+else 
+echo " Password plugin is already unistalled" &>>$LOG
+fi
 Status_Check $?
 
 

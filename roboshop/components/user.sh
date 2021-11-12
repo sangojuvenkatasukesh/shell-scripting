@@ -2,5 +2,5 @@
 
 source components/common.sh
 
-COMPONENT=useradd
+COMPONENT=user
 NODEJS

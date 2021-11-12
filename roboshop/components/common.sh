@@ -30,7 +30,7 @@ useradd roboshop  &>>$LOG
 Status_Check $?
 }
 DOWNLOAD() {
-    
+
 }
 NODEJS() {
     Print "Installing NODEJS\t\t\t"
@@ -39,9 +39,7 @@ Status_Check $?
 
 ADD_APP_USER
 
-Print "Downloading Catalogue Content\t\t"
-curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
-Status_Check $?
+
 
 Print "Extracting Catalogue\t\t\t"
 cd /home/roboshop

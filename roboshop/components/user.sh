@@ -3,5 +3,5 @@
 source components/common.sh
 
 COMPONENT=user
-## No
+## Nodejs is a
 NODEJS

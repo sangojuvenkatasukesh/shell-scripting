@@ -52,6 +52,7 @@ NODEJS() {
 Print "Installing NODEJS\t\t\t"
 yum install nodejs make gcc-c++ -y  &>>$LOG
 Status_Check $?
+
 ADD_APP_USER
 DOWNLOAD
 
@@ -59,7 +60,7 @@ Print "Downloading NodeJS Dependencies\t\t"
 cd /home/roboshop/${COMPONENT} 
  npm install --unsafe-perm  &>>$LOG
  Status_Check $?
- 
+
 chown roboshop:roboshop -R /home/roboshop
 SystemdD_Setup
 }

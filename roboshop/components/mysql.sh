@@ -22,7 +22,7 @@ DEFAULT_PASSWORD=$(grep  'A temporary password' /var/log/mysqld.log | awk '{prin
 )
 
 echo 'ALTER USER 'root'@'localhost' IDENTIFIED BY 'RoboShop@1';'   >/tmp/reset.mysql
-mysql -u root -p"{DEFAULT_PASSWORD}"        </tmp/reset.sql
+mysql -u root -p"{DEFAULT_PASSWORD}"        </tmp/reset1.sql
 
 exit 
 

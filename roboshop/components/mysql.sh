@@ -46,5 +46,7 @@ Status_Check $?
 
 Print "Extract the Schema"
  cd /tmp && unzip -o mysql.zip &>>$LOG
+
+ 
 # cd mysql-main
 # mysql -u root -pRoboShop@1  <shipping.sql

@@ -26,7 +26,7 @@ echo 'show databases' |  mysql -u root -pRoboShop@1   &>>$LOG
 if [ $? -eq 0 ]; then
 echo "Password is already set"  &>>$LOG
 else 
-echo  "mysql> CREATE USER 'root'@'localhost' IDENTIFIED BY 'RoboShop@1'; "  >/tmp/reset.mysql
+echo  "ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass'; "  >/tmp/reset.mysql
 mysql --connect-expired-password -u root -p"{DEFAULT_PASSWORD}"  </tmp/reset.mysql &>>$LOG
 fi
 Status_Check $?

@@ -36,17 +36,10 @@ exit
 Print "Unistall Password Validate Plugin"
 echo "Unistall plugin Validate-password;" >/tmp/pass.mysql 
 mysql -u root -p"RoboShop@1 "  </tmp/reset.mysql &>>$LOG
+Status_Check $?
 
 
-Run the following SQL commands to remove the password policy.
-> uninstall plugin validate_password;
-Setup Needed for Application.
-As per the architecture diagram, MySQL is needed by
 
-Shipping Service
-So we need to load that schema into the database, So those applications will detect them and run accordingly.
-
-To download schema, Use the following command
 
 # curl -s -L -o /tmp/mysql.zip "https://github.com/roboshop-devops-project/mysql/archive/main.zip"
 Load the schema for Services.

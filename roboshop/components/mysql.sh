@@ -18,11 +18,11 @@ Print "Start MySQL Service\t"
 systemctl enable mysqld   &>>$LOG && systemctl start mysqld  &>>$LOG
 Status_Check $?
 
-DEFAULT_PASSWORD=$(sudo grep 'A temporary password' /var/log/mysqld.log | awk '{print $NF}'
+DEFAULT_PASSWORD=$( grep 'A temporary password' /var/log/mysqld.log | awk '{print $NF}'
 )
 
 echo  'ALTER USER 'password: YES' IDENTIFIED BY 'RoboShop@1';'  >/tmp/reset.mysql
-mysql --connect-expired-password-u root -p"{DEFAULT_PASSWORD}"  </tmp/reset.mysql
+mysql --connect-expired-password -u root -p"{DEFAULT_PASSWORD}"  </tmp/reset.mysql
 
 exit  
 

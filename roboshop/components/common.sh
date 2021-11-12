@@ -35,7 +35,7 @@ curl -s -L -o /tmp/${COMPONENT} .zip "https://github.com/roboshop-devops-project
 Status_Check $?
 Print "Extracting ${COMPONENT} \t\t\t"
 cd /home/roboshop
-rm -rf catalogue && unzip -o /tmp/${COMPONENT} .zip  &>>$LOG && mv ${COMPONENT} -main catalogue
+rm -rf ${COMPONENT}  && unzip -o /tmp/${COMPONENT} .zip  &>>$LOG && mv ${COMPONENT} -main catalogue
 Status_Check $?
 
 }

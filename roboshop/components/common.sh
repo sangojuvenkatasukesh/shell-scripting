@@ -37,9 +37,7 @@ Print "Extracting ${COMPONENT} \t\t\t"
 cd /home/roboshop
 rm -rf ${COMPONENT}  && unzip -o /tmp/${COMPONENT} .zip  &>>$LOG && mv ${COMPONENT} -main ${COMPONENT} 
 Status_Check $?
-
 }
-
 SystemdD_setup() {
 Print "Update Systemd Service\t\t\t"
 sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/'  /home/roboshop/ ${COMPONENT} /systemd.service

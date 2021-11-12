@@ -14,8 +14,8 @@ Print "Install MySQL Service"
 yum remove mariadb-libs -y  &>>$LOG  &&  yum install mysql-community-server -y   &>>$LOG
 Status_Check $?
 
-print "Start MySQL.
-# systemctl enable mysqld 
+print "Start MySQL Service"
+ systemctl enable mysqld 
 # systemctl start mysqld
 
 Now a default root password will be generated and given in the log file.

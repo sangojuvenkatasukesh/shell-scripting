@@ -40,7 +40,7 @@ rm -rf ${COMPONENT}  && unzip -o /tmp/${COMPONENT}.zip  &>>$LOG && mv ${COMPONEN
 Status_Check $?
 }
 
-SystemdD_setup() {
+SystemdD_Setup() {
 Print "Update Systemd Service\t\t\t"
 sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/'  /home/roboshop/${COMPONENT}/systemd.service
 Status_Check $?
@@ -59,5 +59,5 @@ cd /home/roboshop/${COMPONENT}
  npm install --unsafe-perm  &>>$LOG
  Status_Check $?
 chown roboshop:roboshop -R /home/roboshop
-SystemdD_setup
+SystemdD_Setup
 }

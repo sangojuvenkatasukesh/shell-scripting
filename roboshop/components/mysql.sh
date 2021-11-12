@@ -50,4 +50,4 @@ Status_Check $?
 Print "Load Schema"
 cd mysql-main
 mysql -u root -pRoboShop@1  <shipping.sql &>>$LOG
- Status_Check $?
+Status_Check $?

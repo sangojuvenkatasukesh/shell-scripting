@@ -3,3 +3,4 @@
 source components/common.sh
 
 COMPONENT=useradd
+NODEJS

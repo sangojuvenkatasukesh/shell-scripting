@@ -59,7 +59,7 @@ sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/'  /home/roboshop/ ${COMPON
 Status_Check $?
 
 Print "Setup Systemd Service\t\t\t"
-mv /home/roboshop/catalogue/systemd.service  /etc/systemd/system/catalogue.service && systemctl daemon-reload && systemctl restart catalogue &>>$LOG
+mv /home/roboshop/catalogue/systemd.service  /etc/systemd/system/cat ${COMPONENT} alogue.service && systemctl daemon-reload && systemctl restart catalogue &>>$LOG
 systemctl enable catalogue  &>>$LOG
 Status_Check $?
 }

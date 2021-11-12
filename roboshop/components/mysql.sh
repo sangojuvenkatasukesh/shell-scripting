@@ -2,8 +2,6 @@
 source components/common.sh
 
 
-As per the Application need, we are choosing MySQL 5.7 version.
-
 Setup MySQL Repo
 # echo '[mysql57-community]
 name=MySQL 5.7 Community Server

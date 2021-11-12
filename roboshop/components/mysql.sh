@@ -44,6 +44,7 @@ Print "Download the Schema"
 curl -s -L -o /tmp/mysql.zip "https://github.com/roboshop-devops-project/mysql/archive/main.zip" &>>$LOG
 Status_Check $?
 
+Print "E"
 # cd /tmp
 # unzip mysql.zip
 # cd mysql-main

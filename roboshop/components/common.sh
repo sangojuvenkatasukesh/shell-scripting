@@ -65,6 +65,5 @@ cd /home/roboshop/ ${COMPONENT}
  Status_Check $?
 
 chown roboshop:roboshop -R /home/roboshop
-
 SystemdD_setup
 }

@@ -45,7 +45,6 @@ curl -s -L -o /tmp/mysql.zip "https://github.com/roboshop-devops-project/mysql/a
 Status_Check $?
 
 Print "Extract the Schema"
- cd /tmp
-# unzip mysql.zip
+ cd /tmp && unzip -o mysql.zip
 # cd mysql-main
 # mysql -u root -pRoboShop@1  <shipping.sql

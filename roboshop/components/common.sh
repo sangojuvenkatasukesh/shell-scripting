@@ -30,7 +30,7 @@ useradd roboshop  &>>$LOG
 Status_Check $?
 }
 DOWNLOAD() {
- Print "Downloading $ Content\t\t"
+ Print "Downloading ${} Content\t\t"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
 Status_Check $?
 

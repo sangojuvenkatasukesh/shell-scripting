@@ -53,7 +53,7 @@ Print "Installing NODEJS\t\t\t"
 yum install nodejs make gcc-c++ -y  &>>$LOG
 Status_Check $?
 
-ADD_APP_USER
+APP_ADD_USER
 DOWNLOAD
 
 Print "Downloading NodeJS Dependencies\t\t"

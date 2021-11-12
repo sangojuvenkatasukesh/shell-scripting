@@ -1,5 +1,5 @@
 #!bin/bash
-source
+sourcesource components/common.sh
 
 
 As per the Application need, we are choosing MySQL 5.7 version.

@@ -19,3 +19,4 @@ if [ $UID -ne 0 ]; then
 LOG=/tmp/roboshop.log
 rm -f $LOG
 
+NODEJS() 

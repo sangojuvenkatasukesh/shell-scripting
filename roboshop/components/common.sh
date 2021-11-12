@@ -18,3 +18,4 @@ if [ $UID -ne 0 ]; then
  fi
 LOG=/tmp/roboshop.log
 rm -f $LOG
+

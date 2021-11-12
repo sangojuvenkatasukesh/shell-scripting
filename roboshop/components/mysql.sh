@@ -26,6 +26,7 @@ Print "Reset Default Password"
 echo  "ALTER USER 'root'@'localhost' IDENTIFIED BY 'pRoboShop@1';"  >/tmp/reset.mysql
 mysql --connect-expired-password -u root -p"{DEFAULT_PASSWORD}"  </tmp/reset.mysql
 Status_Check $?
+
 exit  
 
 

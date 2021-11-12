@@ -20,7 +20,7 @@ Status_Check $?
 DEFAULT_PASSWORD=$(sudo grep  'A temporary password' /var/log/mysqld.log | awk '{print $NF}'
 )
 
-echo
+echo"
 mysql -u root -p"{DEFAULT_PASSWORD}"
 
 

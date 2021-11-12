@@ -47,10 +47,6 @@ Status_Check $?
 ADD_APP_USER
 DOWNLOAD
 
-
-
-
-
 Print "Downloading NodeJS Dependencies\t\t"
 cd /home/roboshop/catalogue
  npm install --unsafe-perm &>>$LOG

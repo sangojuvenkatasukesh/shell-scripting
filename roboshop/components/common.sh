@@ -45,6 +45,7 @@ yum install nodejs make gcc-c++ -y  &>>$LOG
 Status_Check $?
 
 ADD_APP_USER
+DOWNLOAD
 
 
 

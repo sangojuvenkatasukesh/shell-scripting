@@ -1,7 +1,7 @@
 #!bin/bash
 source components/common.sh
 
-Print "Setup MySQL Repo\"
+Print "Setup MySQL Repo\t"
 echo '[mysql57-community]
 name=MySQL 5.7 Community Server
 baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/

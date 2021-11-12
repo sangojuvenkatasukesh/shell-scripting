@@ -16,8 +16,8 @@ Status_Check $?
 
 Print "Start MySQL Service\t"
 systemctl enable mysqld   &>>$LOG && systemctl start mysqld  &>>$LOG
-Status_Check $?
-
+ $?
+Status_Check
 DEFAULT_PASSWORD=$( grep 'A temporary password' /var/log/mysqld.log | awk '{print $NF}'
 )
 

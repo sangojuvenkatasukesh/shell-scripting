@@ -30,7 +30,6 @@ echo  "ALTER USER 'root'@'localhost' IDENTIFIED BY 'RoboShop@1'; "  >/tmp/reset.
 mysql --connect-expired-password -u root -p"{DEFAULT_PASSWORD}"  </tmp/reset.mysql &>>$LOG
 fi
 Status_Check $?
-exit  
 
 
 Print "Unistall Password Validate Plugin"

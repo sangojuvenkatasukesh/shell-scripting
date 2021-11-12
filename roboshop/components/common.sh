@@ -20,7 +20,7 @@ LOG=/tmp/roboshop.log
 rm -f $LOG
 
 APP_ADD_USER() {
-    Print "Adding Roboshop User\t\t\t"
+Print "Adding Roboshop User\t\t\t"
 id roboshop &>>$LOG
 if [ $? -eq 0 ];then
 echo "User already exists, So skipping" &>>$LOG

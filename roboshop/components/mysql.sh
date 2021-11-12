@@ -51,3 +51,4 @@ Print "Extract the Schema"
  Print "Load Schema"
 cd mysql-main
  mysql -u root -pRoboShop@1  <shipping.sql &>>$LOG
+ Status_Check $?

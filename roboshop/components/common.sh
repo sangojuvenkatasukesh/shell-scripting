@@ -19,7 +19,16 @@ if [ $UID -ne 0 ]; then
 LOG=/tmp/roboshop.log
 rm -f $LOG
 
-APP_ADD_USER
+APP_ADD_USER() {
+    Print "Adding Roboshop User\t\t\t"
+id roboshop &>>$LOG
+if [ $? -eq 0 ];then
+echo "User already exists, So skipping" &>>$LOG
+else
+useradd roboshop  &>>$LOG
+ fi
+Status_Check $?
+}
 NODEJS() {
     Print "Installing NODEJS\t\t\t"
 yum install nodejs make gcc-c++ -y  &>>$LOG

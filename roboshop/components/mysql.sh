@@ -24,13 +24,6 @@ echo'ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';' >/tmp/reset.mysql
 mysql -u root -p"{DEFAULT_PASSWORD}" </tmp/reset.sql
 
 
-Now a default root password will be generated and given in the log file.
-# grep temp /var/log/mysqld.log
-
-Next, We need to change the default root password in order to start using the database service.
-# mysql_secure_installation
-
-You can check the new password working or not using the following command.
 
 
 

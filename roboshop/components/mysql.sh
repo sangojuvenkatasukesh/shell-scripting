@@ -1,4 +1,5 @@
 #!bin/bash
+
 source components/common.sh
 
 Print "Setup MySQL Repo\t"

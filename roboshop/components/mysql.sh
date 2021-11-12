@@ -19,6 +19,8 @@ Status_Check $?
 
 DEFAULT_PASSWORD=$(sudo grep  'A temporary password' /var/log/mysqld.log | awk '{print $NF}'
 )
+
+mysql -u root -p
 Now a default root password will be generated and given in the log file.
 # grep temp /var/log/mysqld.log
 
@@ -27,7 +29,7 @@ Next, We need to change the default root password in order to start using the da
 
 You can check the new password working or not using the following command.
 
-# mysql -u root -p
+# 
 
 Run the following SQL commands to remove the password policy.
 > uninstall plugin validate_password;

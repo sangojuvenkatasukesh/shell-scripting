@@ -22,7 +22,7 @@ DEFAULT_PASSWORD=$(sudo grep  'A temporary password' /var/log/mysqld.log | awk '
 
 mysql -u root -p"{DEFAULT_PASSWORD}"
 
-
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
 Now a default root password will be generated and given in the log file.
 # grep temp /var/log/mysqld.log
 

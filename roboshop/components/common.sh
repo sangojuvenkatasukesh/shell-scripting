@@ -49,10 +49,7 @@ DOWNLOAD
 
 
 
-Print "Extracting Catalogue\t\t\t"
-cd /home/roboshop
-rm -rf catalogue && unzip -o /tmp/catalogue.zip  &>>$LOG && mv catalogue-main catalogue
-Status_Check $?
+
 
 Print "Downloading NodeJS Dependencies\t\t"
 cd /home/roboshop/catalogue

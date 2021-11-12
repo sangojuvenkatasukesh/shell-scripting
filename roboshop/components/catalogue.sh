@@ -3,6 +3,6 @@
 source components/common.sh
 
 
-COMPONENT=cata
+COMPONENT=catalogue
 ## NODEJS is a function from common.sh
 NODEJS

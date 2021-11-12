@@ -48,7 +48,7 @@ systemctl enable  ${COMPONENT}   &>>$LOG
 Status_Check $?
 }
 NODEJS() {
-    Print "Installing NODEJS\t\t\t"
+Print "Installing NODEJS\t\t\t"
 yum install nodejs make gcc-c++ -y  &>>$LOG
 Status_Check $?
 ADD_APP_USER

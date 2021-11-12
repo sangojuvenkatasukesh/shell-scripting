@@ -40,7 +40,7 @@ Status_Check $?
 
 }
 
-Syste
+Systemd-setup()
 NODEJS() {
     Print "Installing NODEJS\t\t\t"
 yum install nodejs make gcc-c++ -y  &>>$LOG

@@ -60,6 +60,6 @@ Status_Check $?
 
 Print "Setup Systemd Service\t\t\t"
 mv /home/roboshop/catalogue/systemd.service  /etc/systemd/system/cat ${COMPONENT} alogue.service && systemctl daemon-reload && systemctl restart catalogue &>>$LOG
-systemctl enable catalogue  &>>$LOG
+systemctl enable  ${COMPONENT}   &>>$LOG ${COMPONENT} 
 Status_Check $?
 }

@@ -71,7 +71,7 @@ JAVA() {
     Status_Check $?
     APP_ADD_USER
     DOWNLOAD
-    cd /home/roboshop
+    cd /home/roboshop/shipping
     Print "Make Shipping Package "
     mvn clean package  &>>$LOG
     Status_Check $?

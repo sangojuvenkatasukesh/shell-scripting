@@ -66,5 +66,5 @@ SystemdD_Setup
 }
 
 JAVA() {
-    Print "Installing Maven"
+    Print "Installing Maven\t"
 }

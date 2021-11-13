@@ -16,8 +16,6 @@ mysql:	        ## Install mysql
 		@bash components/mysql.sh
 shipping:   	## Install shipping
 		@bash components/shipping.sh
-:      ## Install Rabrabbitmqbitmq
-		@bash components/rabbitmq
 payment:  	## Install payment
 		@bash components/payment.sh
 frontend:	 ## Install Frontend

@@ -65,4 +65,6 @@ chown roboshop:roboshop -R /home/roboshop
 SystemdD_Setup
 }
 
-JAVA()
+JAVA() {
+    Print ""
+}

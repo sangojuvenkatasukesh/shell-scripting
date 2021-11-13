@@ -25,7 +25,6 @@ Print "Adding Roboshop User\t\t\t"
 id roboshop &>>$LOG
 if [ $? -eq 0 ];then
 echo "User already exists, So skipping" &>>$LOG
-else
 useradd roboshop  &>>$LOG
  fi
 Status_Check $?

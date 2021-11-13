@@ -2,6 +2,6 @@
 
 source components/common.sh
 
-COMPONENT=pa
-## JAVA is a function from common.sh
+COMPONENT=payment
+## PYHONis a function from common.sh
 JAVA

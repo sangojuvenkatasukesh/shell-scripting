@@ -87,6 +87,7 @@ PYTHON() {
     Status_Check $?
     APP_ADD_USER
     DOWNLOAD
-    p
+    
+    Print ""
 
 }

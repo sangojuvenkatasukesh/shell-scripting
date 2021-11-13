@@ -67,5 +67,5 @@ SystemdD_Setup
 
 JAVA() {
     Print "Installing Maven\t"
-    yum install maven -y
+    yum install maven -y &>>$LOG
 }

@@ -90,7 +90,7 @@ PYTHON() {
     
     DOWNLOAD
     
-    cd /home/roboshop/${COMPONENT} 
+    cd /home/roboshop/
 
     Print "Install Python Dependencies"
     pip3 install -r requirements.txt  &>>$LOG

@@ -86,5 +86,6 @@ PYTHON() {
     yum install python36 gcc python3-devel -y  &>>$LOG
     Status_Check $?
     APP_ADD_USER
+    DOWNLOAD
 
 }

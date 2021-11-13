@@ -71,5 +71,5 @@ JAVA() {
     Status_Check $?
     APP_ADD_USER
     DOWNLOAD
-    Print "Make c"
+    Print "Make Shipping Package "
 }

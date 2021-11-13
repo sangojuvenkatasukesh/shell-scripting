@@ -88,8 +88,8 @@ PYTHON() {
     APP_ADD_USER
     DOWNLOAD
     cd /home/roboshop/${COMPONENT}  
+
     Print "Install Python Dependencies"
-    
     pip3 install -r requirements.txt  &>>$LOG
     Status_Check $?
 }

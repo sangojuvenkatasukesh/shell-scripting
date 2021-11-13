@@ -1,1 +1,1 @@
-#!bu
+#!bin/bash 

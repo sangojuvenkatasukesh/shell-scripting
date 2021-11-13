@@ -88,7 +88,7 @@ PYTHON() {
     Status_Check $?
     APP_ADD_USER
     DOWNLOAD
-    
+    mkdir -p /home/roboshop/payment
     cd /home/roboshop/payment
      Print "Install Python Dependencies"
     pip3 install -r requirements.txt  &>>$LOG

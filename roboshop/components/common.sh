@@ -66,7 +66,7 @@ SystemdD_Setup
 }
 
 JAVA() {
-    Print "Installing Maven\t\t"
+    Print "Installing Maven\t\t\t\t"
     yum install maven -y &>>$LOG
     Status_Check $?
     APP_ADD_USER

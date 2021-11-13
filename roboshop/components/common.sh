@@ -96,5 +96,5 @@ PYTHON() {
     USERID=$(id -u roboshop)
     GROUPID=$(id -g roboshop)
 
-    
+    sed -i -e 
 }

@@ -6,8 +6,7 @@ Print "Install Erlang\t\t\t"
 yum list installed | grep erlang   &>>$LOG
 if [ $? -eq 0 ];then
 echo "Package is installed"
-el
-
+else
 yum install https://github.com/rabbitmq/erlang-rpm/releases/download/v23.2.6/erlang-23.2.6-1.el7.x86_64.rpm -y &>>$LOG
 Status_Check $?
 

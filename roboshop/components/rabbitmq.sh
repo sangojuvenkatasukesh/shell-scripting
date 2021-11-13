@@ -11,7 +11,7 @@ else
 fi 
 Status_Check $?
 
-Print "Setup YUM repositories \t"
+Print "Setup YUM repositories\t"
 curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | sudo bash  &>>$LOG
 Status_Check $?
 

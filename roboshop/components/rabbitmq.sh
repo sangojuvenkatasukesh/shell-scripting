@@ -15,7 +15,7 @@ Print "Setup YUM repositories \t"
 curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | sudo bash  &>>$LOG
 Status_Check $?
 
-Print "Install RabbitMQ\t\t\t"
+Print "Install RabbitMQ\t\t"
 yum install rabbitmq-server -y  &>>$LOG
 Status_Check $?
 

@@ -82,5 +82,6 @@ JAVA() {
     SystemdD_Setup
 }
 PYTHON() {
-    Print "Install P"
+    Print "Install Python"
+    
 }

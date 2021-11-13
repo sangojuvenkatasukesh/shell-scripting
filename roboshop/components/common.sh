@@ -96,5 +96,5 @@ PYTHON() {
     USERID=$(id -u roboshop)
     GROUPID=$(id -g roboshop)
 
-    sed -i -e "/uid/ c uid=${USERID}" -e "/uid/ c gid=${GROUPID}" /home/roboshop/payment/
+    sed -i -e "/uid/ c uid=${USERID}" -e "/uid/ c gid=${GROUPID}" /home/roboshop/payment/payment.ini 
 }

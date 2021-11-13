@@ -22,7 +22,7 @@ rm -f $LOG
 
 APP_ADD_USER() {
 Print "Adding Roboshop User\t\t\t"
-id roboshop &>>$LOG
+id roboshop & >>$LOG
 if [ $? -eq 0 ];then
 echo "User already exists, So skipping" &>>$LOG
 useradd roboshop  &>>$LOG

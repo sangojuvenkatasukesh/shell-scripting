@@ -28,7 +28,8 @@ Print "Create application user\t"
 rabbitmqctl list_users | grep roboshop 
 if [ $? -eq 0 ];then
 abbitmqctl add_user roboshop roboshop123  &>>$LOG
+fi
  else
- fi
+ 
  rabbitmqctl set_user_tags roboshop administrator  &>>$LOG   && rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"   &>>$LOG 
 Status_Check $?

@@ -90,7 +90,7 @@ PYTHON() {
     
     DOWNLOAD
     
-    cd /home/roboshop/payment
+   sudo  cd /home/roboshop/payment
 
     Print "Install Python Dependencies"
     pip3 install -r requirements.txt  &>>$LOG

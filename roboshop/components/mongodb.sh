@@ -31,7 +31,7 @@ Status_Check $?
  cd mongodb-main
  Print "Loading schema\t\t\t"
  for schema in catalogue user;download
-mongo < catalogue.js &>>$LOG
+mongo < $schema.js &>>$LOG
  
 Status_Check $?
 

@@ -24,7 +24,7 @@ systemctl enable rabbitmq-server   &>>$LOG && systemctl start rabbitmq-server  &
 Status_Check $?
 
 
-Print "Create application user\t\"
+Print "Create application user\t"
 rabbitmqctl list_users | grep roboshop
 rabbitmqctl add_user roboshop roboshop123  &>>$LOG && rabbitmqctl set_user_tags roboshop administrator  &>>$LOG   &&rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"   &>>$LOG 
 Status_Check $?

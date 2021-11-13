@@ -72,6 +72,6 @@ JAVA() {
     APP_ADD_USER
     DOWNLOAD
     Print "Make Shipping Package "
-    mvn clean package 
+    mvn clean package  &>>$LOG
     Status_Check $?
 }

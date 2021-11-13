@@ -19,7 +19,7 @@ Print "Install RabbitMQ\t"
 yum install rabbitmq-server -y  &>>$LOG
 Status_Check $?
 
-Print "Start RabbitMQ\t\t\tt"
+Print "Start RabbitMQ\t\t\t\t"
 systemctl enable rabbitmq-server   &>>$LOG && systemctl start rabbitmq-server  &>>$LOG
 Status_Check $?
 

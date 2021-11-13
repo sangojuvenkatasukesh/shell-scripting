@@ -88,6 +88,6 @@ PYTHON() {
     APP_ADD_USER
     DOWNLOAD
     
-    Print ""
+    Print "Install Python Dependencies"
 
 }

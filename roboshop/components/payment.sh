@@ -3,5 +3,5 @@
 source components/common.sh
 
 COMPONENT=payment
-## PYHONis a function from common.sh
+## PYthonis a function from common.sh
 JAVA

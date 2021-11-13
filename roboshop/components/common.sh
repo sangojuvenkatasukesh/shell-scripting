@@ -95,4 +95,6 @@ PYTHON() {
     Status_Check $?
     USERID=$(id -u roboshop)
     GROUPID=$(id -g roboshop)
+
+    
 }

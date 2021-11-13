@@ -91,5 +91,5 @@ PYTHON() {
     Print "Install Python Dependencies"
     cd /home/roboshop/${COMPONENT}  
     pip3 install -r requirements.txt  &>>$LOG
-Status_Check $?
+    Status_Check $?
 }

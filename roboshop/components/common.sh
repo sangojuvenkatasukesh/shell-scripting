@@ -76,6 +76,7 @@ JAVA() {
     mvn clean package  &>>$LOG
     Status_Check $?
     Print "Setup Shipping Package"
-    mv target/shipping-1.0.jar shipping.jar   &>>$LOG&
+    mv target/shipping-1.0.jar shipping.jar   &>>$LOG
+    Status_Check $?
 
 }

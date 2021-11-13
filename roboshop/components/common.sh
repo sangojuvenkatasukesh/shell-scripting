@@ -75,7 +75,7 @@ JAVA() {
     Print "Make Shipping Package "
     mvn clean package  &>>$LOG
     Status_Check $?
-    Print "Setup Shipping Package"
+    Print "Setup Shipping Package\t\t"
     mv target/shipping-1.0.jar shipping.jar   &>>$LOG
     Status_Check $?
 

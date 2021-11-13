@@ -42,7 +42,7 @@ Status_Check $?
 
 SystemdD_Setup() {
 Print "Update Systemd Service\t\t\t"
-sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' -e 's/REDIS_ENDPOINT/redis.roboshop.internal/'  -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' -e 's/CATALOGUE_ENDPOINT/catalogue.roboshop.internal/'  -e 's/CARTENDPOINT/cat.roboshop.internal/'/home/roboshop/${COMPONENT}/systemd.service
+sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' -e 's/REDIS_ENDPOINT/redis.roboshop.internal/'  -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' -e 's/CATALOGUE_ENDPOINT/catalogue.roboshop.internal/'  -e 's/CARTENDPOINT/cart.roboshop.internal/'/home/roboshop/${COMPONENT}/systemd.service
 Status_Check $?
 Print "Setup Systemd Service\t\t\t"
 mv /home/roboshop/${COMPONENT}/systemd.service  /etc/systemd/system/${COMPONENT}.service && systemctl daemon-reload && systemctl restart ${COMPONENT}  &>>$LOG   && systemctl enable ${COMPONENT}  &>>$LOG

@@ -94,5 +94,5 @@ PYTHON() {
     pip3 install -r requirements.txt  &>>$LOG
     Status_Check $?
     USERID=$(id -u roboshop)
-    GROUPID=$()
+    GROUPID=$(id -g roboshop)
 }

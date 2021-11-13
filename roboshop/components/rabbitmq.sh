@@ -3,7 +3,7 @@
 source components/common.sh
 
 Print "Install Erlang\t\t\t"
-yum list installed | grep erlang   &>>$LOG
+yum list installed | grep erlang  &>>$LOG
 if [ $? -eq 0 ];then
 echo "Package is installed"
 else

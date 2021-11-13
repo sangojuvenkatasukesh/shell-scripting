@@ -78,5 +78,6 @@ JAVA() {
     Print "Setup Shipping Package\t\t\t"
     mv target/shipping-1.0.jar shipping.jar   &>>$LOG
     Status_Check $?
+    chown roboshop:roboshop -R /home/roboshop
 
 }

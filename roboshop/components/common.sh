@@ -89,6 +89,6 @@ PYTHON() {
     DOWNLOAD
     
     Print "Install Python Dependencies"
-    cd /home/roboshop/payment
+    cd /home/roboshop/${COMPONENT} 
 
 }

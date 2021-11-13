@@ -81,3 +81,4 @@ JAVA() {
     chown roboshop:roboshop -R /home/roboshop
     SystemdD_Setup
 }
+PYTHON() []

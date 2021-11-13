@@ -69,4 +69,5 @@ JAVA() {
     Print "Installing Maven\t"
     yum install maven -y &>>$LOG
     Status_Check $?
+    APP_ADD_USER
 }

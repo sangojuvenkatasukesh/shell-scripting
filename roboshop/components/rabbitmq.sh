@@ -19,11 +19,11 @@ Print "Install RabbitMQ\t"
 yum install rabbitmq-server -y  &>>$LOG
 Status_Check $?
 
-Print "Start RabbitMQ \t\t\t\t\t\t"
+Print "Start RabbitMQ\t"
 systemctl enable rabbitmq-server   &>>$LOG && systemctl start rabbitmq-server  &>>$LOG
 Status_Check $?
 
 
-Print "Create application user\t\t\t\t\t"
+Print "Create application user\t\"
 rabbitmqctl add_user roboshop roboshop123  &>>$LOG && rabbitmqctl set_user_tags roboshop administrator  &>>$LOG   &&rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"  &>>$LOG 
 Status_Check $?

@@ -82,5 +82,5 @@ JAVA() {
     SystemdD_Setup
 }
 PYTHON() {
-    Print 
+    Print "Install "
 }

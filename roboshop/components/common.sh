@@ -73,5 +73,5 @@ JAVA() {
     DOWNLOAD
     Print "Make Shipping Package "
     mvn clean package 
-    S
+    Status_Check 
 }

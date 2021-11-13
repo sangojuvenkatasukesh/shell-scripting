@@ -75,5 +75,5 @@ JAVA() {
     Print "Make Shipping Package "
     mvn clean package  &>>$LOG
     Status_Check $?
-    Print ""
+    Print "Setup "
 }

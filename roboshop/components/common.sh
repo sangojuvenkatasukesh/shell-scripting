@@ -64,3 +64,5 @@ cd /home/roboshop/${COMPONENT}
 chown roboshop:roboshop -R /home/roboshop
 SystemdD_Setup
 }
+
+JAVA()

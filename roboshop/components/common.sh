@@ -72,7 +72,7 @@ JAVA() {
     APP_ADD_USER
     DOWNLOAD
     cd /home/roboshop/shipping
-    Print "Make Shipping Package\t\t "
+    Print "Make Shipping Package\t\t\t"
     mvn clean package  &>>$LOG
     Status_Check $?
     Print "Setup Shipping Package\t\t\t"
